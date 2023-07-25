@@ -1,0 +1,117 @@
+{
+  "id": "9ff20c35-5c3e-4811-9b69-b3083f10fdda",
+  "version": "2.0",
+  "name": "SomarParcelas",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "0f5d1bad-1702-4957-a4f8-384bd3f12f47",
+    "name": "SomarParcelas",
+    "commands": [{
+      "id": "41722748-e837-4953-a7b0-3e7bf3604a9a",
+      "comment": "",
+      "command": "open",
+      "target": "/SomarParcelas/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0d56685-919c-4842-8d82-5abef08720ba",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "996x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d9e3796-954f-4296-968e-a8d83a7dcb5b",
+      "comment": "",
+      "command": "click",
+      "target": "name=p1",
+      "targets": [
+        ["name=p1", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='p1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed6abdba-8d98-4895-bb4b-e0e890eb5153",
+      "comment": "",
+      "command": "type",
+      "target": "name=p1",
+      "targets": [
+        ["name=p1", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='p1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "13"
+    }, {
+      "id": "be94a04f-a8e9-4d72-9822-aec65d4fb2cc",
+      "comment": "",
+      "command": "click",
+      "target": "name=p2",
+      "targets": [
+        ["name=p2", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='p2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49065158-0a5f-446e-89da-5ad6de85c2d4",
+      "comment": "",
+      "command": "type",
+      "target": "name=p2",
+      "targets": [
+        ["name=p2", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='p2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "13"
+    }, {
+      "id": "5b230fe7-55db-446a-8ccc-1c12d622a426",
+      "comment": "",
+      "command": "click",
+      "target": "name=calcular",
+      "targets": [
+        ["name=calcular", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='calcular']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91d96485-f559-4016-92f6-6964c8ebae4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'O resultado foi 26')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fbc0740-ca12-488f-a7f1-91842aa595aa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'O resultado foi 26')]", "xpath:innerText"]
+      ],
+      "value": "O resultado foi 26"
+    }]
+  }],
+  "suites": [{
+    "id": "6fa491be-d1c1-4fb4-b889-c3e16aeec8fd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0f5d1bad-1702-4957-a4f8-384bd3f12f47"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
