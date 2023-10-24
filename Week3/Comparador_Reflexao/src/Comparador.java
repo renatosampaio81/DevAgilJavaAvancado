@@ -11,10 +11,12 @@ public class Comparador {
 		Class<?> clazz = velho.getClass(); //o tipo de clazz é um objeto genérico
 		
 		//recupera todos os métodos get de clazz, que tenham zero parametros e sejam diferente de void
+		//inseri a verificacao de nao ter a anotacao IgnorarNaComparacao
 		for(Method m : clazz.getMethods()) {
 			if(m.getName().startsWith("get") &&
 					m.getParameterCount() == 0 &&
-					m.getReturnType() != void.class) {
+					m.getReturnType() != void.class &&
+					!m.isAnnotationPresent(IgnorarNaComparacao.class)) {
 				
 				//invoca por reflexao o método buscado do objeto velho e do objeto novo
 				Object valorVelho = m.invoke(velho);

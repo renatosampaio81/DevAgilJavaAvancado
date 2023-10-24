@@ -30,6 +30,8 @@ public class Pessoa {
 		this.sobrenome = sobrenome;
 	}
 
+	//Essa anotacao ira ignorar o campo idade na comparacao, mas também é necessario incluir na classe Comparador
+	@IgnorarNaComparacao
 	public int getIdade() {
 		return idade;
 	}
