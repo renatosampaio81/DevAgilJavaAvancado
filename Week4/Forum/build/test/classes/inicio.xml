@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<usuario login="renato" nome="Ze Renato" email="renato@email.com" pontos="10" senha="coxinha123"></usuario>
+	<usuario login="sonia" nome="Sonia Maria" email="sonia@email.com" pontos="3" senha="senha456"></usuario>
+	
+	<topico login="renato" titulo="Como criar um Web Service com Java" conteudo="Neste tópico, vamos aprender como criar um Web Service com Java usando o Spring Boot." id_topico="1"></topico>
+	
+	<comentario login="sonia" comentario="primeiro comentario" id_topico="1" id_comentario="1"></comentario>
+
+</dataset>
